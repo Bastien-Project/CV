@@ -1,94 +1,109 @@
 @import url(https://fonts.googleapis.com/css?family=Share+Tech);
 
-body{
+body {
    background-color: #000;
 }
 
-h1{
+h1 {
    font-family: "Share Tech";
-   animation: pulse .9s infinite;
-   color: #00ebd4;
+   animation: pulse 2s infinite;
+   color: #0D0;
 }
 
-#identity-results, #resume, #loading-alpha-div, #loadingH1, #loadingMessage2, #message{
+h3 {
+   margin-top: 0;
+}
+
+a {
+   text-decoration: none;
+   color: #0D0;
+}
+
+#contact h3:hover,
+#location:hover,
+#vehicle:hover,
+#programming h3:hover,
+#lang:hover,
+#XP h3:hover,
+#hobbies:hover,
+a:hover {
+   color: #F2F;
+}
+
+#identity-results,
+#resume,
+#loadingH1,
+#loadingMessage2,
+#message {
    margin-top: 20px;
    font-family: "Share Tech";
    font-weight: 900;
    font-size: 24px;
-   color: #00ebd4;
-   /*animation: pulse .9s infinite;*/
-   animation : pulse 2s infinite;
-}
-
-/*i{
-   font-size: 24px;
-   color: #00ebd4;
-   animation: pulse .9s infinite;  
-}*/
-
-.block{
-   width: 50px;
-   height: 50px;
-   background-color: #000;
+   color: #0D0;
+   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
    0% {
-    opacity: 1;
-  }
+      opacity: 1;
+   }
+
    50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+      opacity: 0.8;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
 
 .cursor:after {
-	content:"_";
-	opacity: 0;
-	animation: cursor 1s infinite;
+   content: "_";
+   opacity: 0;
+   animation: cursor 1s infinite;
 }
-.sign:before{
+
+.sign:before {
    content: "> ";
 }
+
 @keyframes cursor {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+   0% {
+      opacity: 0;
+   }
+
+   40% {
+      opacity: 0;
+   }
+
+   50% {
+      opacity: 1;
+   }
+
+   90% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
 }
 
-#loading-alpha-div, .img-div{
+#loadingMessage2 {
    display: none;
 }
 
-img{
-   margin: 50px 0;
-   animation: pulse .9s infinite;
+#identity,
+#contact,
+#programming,
+#XP {
+   display: flex;
+   flex-wrap: wrap;
 }
 
-#loadingMessage2{
-   display: none;
+#identity>*:not(:first-child),
+#contact>*:not(:first-child),
+#programming>*:not(:first-child),
+#XP>*:not(:first-child) {
+   margin-left: 50px;
 }
-
-/*.sub-item{
-   margin-top: 20px;
-   margin-left: 40px;
-}
-
-.inline{
-   display: inline;
-   margin-left: 10px;
-}*/
